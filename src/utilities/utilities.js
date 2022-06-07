@@ -108,7 +108,7 @@ export const externalLinkSetter = (owner_id, name) => {
     [BACKDROP_PARTNER.name]: `${BACKDROP_PARTNER.url}/${owner_id}`,
     [LIGHT_PARTNER.name]: `${LIGHT_PARTNER.url}/${owner_id}`,
     [GIT_POAP_PARTNER.name]: `${GIT_POAP_PARTNER.url}/p/${owner_id}`,
-    [POAP_IN_PARTNER.name]: `${GIT_POAP_PARTNER.url}${owner_id}`,
+    [POAP_IN_PARTNER.name]: `${POAP_IN_PARTNER.url}/${owner_id}`,
     'default': ''
   };
   return collectionLinks[name] ||  collectionLinks['default']
